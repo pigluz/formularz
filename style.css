@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+#fieldrequired {
+    color:red;
+}
+h3 {
+    display:inline
+}
+
+#jezyk_select {
+    overflow: hidden;
+}
+textarea {
+    resize: none;
+}
+
+header {
+    background-color:rgb(0, 110, 255) ;
+    color:white;
+    padding: 10px;
+    width: 2000px;
+    position: relative;
+    left: -10px;
+    top:-10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+form {
+    margin-top:30px;
+    margin-left: 120px;
+}
+
+.input_field {
+    padding:5px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+#input_table {
+    width: 500px;
+}
+
+hr {
+    margin-right:120px;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+i {
+    font-family: cursive;
+}
+
+.buttons {
+    cursor: pointer;
+    padding:6px;
+    margin-right: 5px;
+    border: none;
+    background-color: rgba(231, 223, 223, 0.575);
+}
+
+footer {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.438);
+}

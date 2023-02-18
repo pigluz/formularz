@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz rejestracyjny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>formularz rejestracyjny</h1>
+    </header>
+    <span id="fieldrequired" style="margin-left:90px">(*)</span><b> - pola obowiązkowe</b>
+
+    <form>
+        <table>
+            <tr>
+                <td style="width:115px"><h3>Nazwisko</h3><span id="fieldrequired">*</span></td>
+                <td><input type="text" placeholder="nazwisko" required class="input_field" id="input_table"></td>
+            </tr>
+            <tr>
+                <td><h3>Imię:</h3><span id="fieldrequired">*</span></td>
+                <td><input type="text" placeholder="imię" required class="input_field" id="input_table"></td>
+            </tr>
+            <tr>
+                <td rowspan="4"><h3>Adres:</h3><span id="fieldrequired">*</span></td>
+                <td>Kod pocztowy:</td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="00-000" required class="input_field" id="input_table"></td>
+            </tr>
+            <tr>
+                <td>Miasto:</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="miasto" required class="input_field" id="input_table"></td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Wybierz płeć:</h3>
+        <input type="radio" name="plec">Kobieta
+        <input type="radio" name="plec">Mężczyzna</h3>
+        <hr>
+        <h3>Podaj przedział wiekowy:</h3>
+        <select class="input_field">
+            <option>16-24, 25-39, 40-60, powyżej 60</option>
+            <option>16-24</option>
+            <option>25-39</option>
+            <option>40-60</option>
+            <option>powyżej 60</option>
+        </select>
+        <hr>
+        <h3>Podaj adres e-mail:</h3><span id="fieldrequired">*</span>
+        <input type="email" placeholder="a@serwer.pl" required class="input_field">
+        <hr>
+        <h3>Wykształcenie:</h3><br><br>
+        <input type="radio" name="wyksz">podstawowe<br>
+        <input type="radio" name="wyksz">średnie<br>
+        <input type="radio" name="wyksz">wyższe
+        <hr>
+        <h3>Wybierz języki:</h3><br><br>
+        <select multiple size="6" id="jezyk_select">
+            <option>angielski</option>
+            <option>niemiecki</option>
+            <option>francuski</option>
+            <option>włoski</option>
+            <option>hiszpański</option>
+            <option>rosyjski</option>
+        </select>
+        <p>Uwaga: <i>Ctrl</i> pozwala zaznaczyć kilka języków</p>
+        <hr>
+        <h3>Zainteresowania:</h3><br><br>
+        <input type="checkbox" name="zainteresowania">motoryzacja<br>
+        <input type="checkbox" name="zainteresowania">sport<br>
+        <input type="checkbox" name="zainteresowania">muzyka<br>
+        <input type="checkbox" name="zainteresowania">taniec<br>
+        <input type="checkbox" name="zainteresowania">gry<br>
+        <input type="checkbox" name="zainteresowania">inne (podaj jakie): <input type="text" class="input_field">
+        <hr>
+        <h3>Wpisz swoje uwagi:</h3><br><br>
+        <textarea cols="60" rows="10px" class="input_field"></textarea>
+        <hr>
+        <input type="checkbox" name="rodo" required>zgadzam się na przetwarzanie moich danych osobowych
+        <hr>
+        <input type="submit" value="wyślij formularz" class="buttons">&nbsp;<input type="reset" value="wyczyść pola" class="buttons">
+        <hr>
+    </form>
+
+    <footer><br>
+        <center>
+            <p>Made by pigluz</p>
+        </center>
+    </footer>
+</body>
+
+</html>
